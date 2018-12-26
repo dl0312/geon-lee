@@ -35,7 +35,6 @@ const BioHeader = styled.div`
 `;
 
 const BioSubHeader = styled.div`
-  font-family: "europa", sans-serif;
   font-weight: 300;
   line-height: 1.5;
   font-size: 1.25rem;

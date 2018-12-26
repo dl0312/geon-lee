@@ -16,7 +16,7 @@ const Icon = styled.i`
 
 const SkillTitle = styled.div`
   margin-top: 1em;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
   font-weight: 800;
   color: #293347;
   font-size: 2em;
@@ -24,16 +24,16 @@ const SkillTitle = styled.div`
   word-break: break-word;
 `;
 
-const SkillBody = styled.div`
+const SkillBody = styled.span`
   font-size: 18px;
-  margin-bottom: 1em;
+  margin-top: 0.3em;
 `;
 
 const SkillSubTitle = styled.div`
   color: #8c43ff;
   margin-top: 15px;
-  margin-bottom: 8px;
   font-size: 18px;
+  font-weight: 900;
 `;
 
 interface IProps {
@@ -70,11 +70,9 @@ export default class SkillCard extends React.Component<IProps, any> {
           <SkillTitle>{cardTitle}</SkillTitle>
           <SkillBody>{cardDescription}</SkillBody>
           <SkillSubTitle>{cardAbility}</SkillSubTitle>
-          <SkillBody>
-            {cardAbilityArray.map(
-              (cardAbilityItem, index) => cardAbilityItem + ","
-            )}
-          </SkillBody>
+          {cardAbilityArray.map((cardAbilityItem, index) => (
+            <SkillBody key={index}>{cardAbilityItem}</SkillBody>
+          ))}
           <SkillSubTitle>{cardTool}</SkillSubTitle>
           {cardToolArray.map((cardToolItem, index) => (
             <SkillBody key={index}>{cardToolItem}</SkillBody>

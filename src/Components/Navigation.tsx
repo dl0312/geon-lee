@@ -68,6 +68,26 @@ const NavigationItem = styled.div`
   position: relative;
 `;
 
+const SocialContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+const SocialButton = styled.i`
+  background-color: transparent;
+  border-radius: 100%;
+  color: rgba(0, 0, 0, 0.5);
+  transition: 0.5s ease;
+  font-size: 1.5rem;
+  padding: 8px;
+  margin: 0 5px;
+  cursor: pointer;
+  &:hover {
+    color: black;
+  }
+`;
+
 export default class Navigation extends React.Component {
   public render() {
     return (
@@ -78,7 +98,29 @@ export default class Navigation extends React.Component {
           </NavigationLogo>
           <NavigationMenu>
             <NavigationEnd>
-              <NavigationItem>Say Hello</NavigationItem>
+              <NavigationItem>
+                <SocialContainer>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/geon-lee-26771614b/"
+                  >
+                    <SocialButton className="fab fa-linkedin-in" />
+                  </a>
+                  <SocialButton
+                    onClick={() => window.open("mailto:leegun2003@gmail.com")}
+                    className="far fa-envelope"
+                  />
+                  <a target="_blank" href="https://github.com/dl0312">
+                    <SocialButton className="fab fa-github" />
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://www.youtube.com/channel/UCc0sQY-o1HupAvho3z1S86A"
+                  >
+                    <SocialButton className="fab fa-youtube" />
+                  </a>
+                </SocialContainer>
+              </NavigationItem>
             </NavigationEnd>
           </NavigationMenu>
         </NavigationWrapper>

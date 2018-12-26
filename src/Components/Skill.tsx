@@ -4,9 +4,12 @@ import { media } from "../../src/config/_mixin";
 import SkillCard from "./SkillCard";
 
 const SkillContainer = styled.section`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: -14rem;
   padding-bottom: 1rem;
-  padding: 5rem 1.5rem;
+  padding: 2.5rem 1.5rem;
 `;
 
 const SkillWrapper = styled.div`
@@ -32,25 +35,20 @@ const skillCards = [
   {
     icon: "fas fa-video",
     cardTitle: "프로듀서",
-    cardDescription: "남들의 이목을 끄는 영상을 만드는 걸 잘합니다.",
+    cardDescription: "영상을 기획, 촬영, 편집할 수 있습니다.",
     cardAbility: "영상 종류",
     cardAbilityArray: ["드라마", "단편영화", "다큐멘터리", "예능", "광고"],
     cardTool: "영상 도구",
-    cardToolArray: ["프리미어 프로"]
+    cardToolArray: ["Photoshop", "Premiere Pro"]
   },
   {
     icon: "fas fa-laptop",
-    cardTitle: "풀스택 개발자",
+    cardTitle: "웹 개발자",
     cardDescription: "풀스택 개발자를 목표로 하고 있습니다.",
     cardAbility: "사용하는 언어",
-    cardAbilityArray: ["리액트", "장고", "스타일드컴포넌트", "HTML"],
+    cardAbilityArray: ["HTML", "CSS", "React", "Django"],
     cardTool: "개발 도구",
-    cardToolArray: [
-      "비쥬얼 스튜디오 코드",
-      "소스트리",
-      "깃허브",
-      "코드샌드박스"
-    ]
+    cardToolArray: ["Visual Studio Code", "SourceTree", "Github", "CodeSandbox"]
   }
 ];
 
