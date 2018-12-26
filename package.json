@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dl0312.github.io/geonlee/",
+  "homepage": "https://dl0312.github.io/",
   "dependencies": {
     "@types/dotenv": "^6.1.0",
     "@types/react-router-dom": "^4.3.1",
@@ -24,8 +24,8 @@
     "build": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom",
     "eject": "react-scripts-ts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "predeploy": "npm run dist",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@types/jest": "^23.3.10",
