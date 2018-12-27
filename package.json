@@ -1,8 +1,8 @@
 {
-  "name": "my-app",
+  "name": "geon-lee",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dl0312.github.io/",
+  "homepage": "https://dl0312.github.io/geon-lee",
   "dependencies": {
     "@types/dotenv": "^6.1.0",
     "@types/react-router-dom": "^4.3.1",
